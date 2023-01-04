@@ -1,0 +1,7 @@
+Sitemap: https://www.gils22.com/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /

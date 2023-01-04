@@ -1,0 +1,219 @@
+.slick-active .textWrapper {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  /* animation-delay: 2s; */
+  /* padding-left: 40px !important;
+  padding-right: 40px !important; */
+}
+.slick-active .textWrapper span {
+  /* display: inline-block; */
+  opacity: 0;
+  filter: blur(4px);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slick-active .textWrapper2 {
+  transform: scale(0.94);
+  animation: scale2 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  /* animation-delay: 2s; */
+  /* padding-left: 40px !important;
+  padding-right: 40px !important; */
+}
+
+@keyframes scale2 {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slick-active span:nth-child(1) {
+  animation: fade-in 0.8s 0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.slick-active span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.slick-active span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.slick-active span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  margin-top: -85px;
+  color: #fff;
+  /* font-size: 8em; */
+  position: absolute;
+}
+
+@media screen and (max-width: 700px) {
+  .content h2 {
+    left: 24%;
+    transform: translate(0, -50%);
+    margin-top: -30px;
+  }
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.slick-active .title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.slick-active .title-word-1 {
+  --color-1: #fff;
+  text-shadow: 0 0 7px #b65de9, 0 0 10px #b65de9, 0 0 21px #b65de9,
+    0 0 42px #b65de9, 0 0 82px #b65de9, 0 0 92px #b65de9, 0 0 102px #b65de9,
+    0 0 151px #b65de9;
+}
+
+.slick-active .title-word-2 {
+  --color-1: #fff;
+  text-shadow: 0 0 7px #b65de9, 0 0 10px #b65de9, 0 0 21px #b65de9,
+    0 0 42px #b65de9, 0 0 82px #b65de9, 0 0 92px #b65de9, 0 0 102px #b65de9,
+    0 0 151px #b65de9;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.slick-active .title-word-3 {
+  --color-1: #fff;
+  text-shadow: 0 0 7px #b65de9, 0 0 10px #b65de9, 0 0 21px #b65de9,
+    0 0 42px #b65de9, 0 0 82px #b65de9, 0 0 92px #b65de9, 0 0 102px #b65de9,
+    0 0 151px #b65de9;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-1);
+  }
+  65% {
+    color: var(--color-1);
+  }
+  66% {
+    color: var(--color-1);
+  }
+  99% {
+    color: var(--color-1);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+/* Here are just some visual styles. 🖌
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 100vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+} */
+/* .slick-active .slideAnimation01 {
+  transition: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation: NEW 15s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.slick-active .slideAnimation0 {
+  transition: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation: NEW 15s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-delay: 0.5s;
+}
+
+.slick-active .slideAnimation {
+  transition: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation: NEW 15s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-delay: 1s;
+}
+.slick-active .slideAnimation1 {
+  transition: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation: NEW 15s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-delay: 1.5s;
+}
+
+@keyframes NEW {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: translateX(93%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+} */
